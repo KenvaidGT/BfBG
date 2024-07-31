@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+[[mods]]
+modId="tci"
+version="0.0.1"
+displayName="Blood for Blood God"
+authors="KenvaidGT, Skrilrax"
+
+description='''This is an example mod for demonstration purposes.'''
+[[dependencies.tci]]
+modId="forge"
+mandatory=true
+versionRange="[36,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.tci]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16.5]"
+ordering="NONE"
+side="BOTH"
