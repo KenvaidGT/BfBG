@@ -14,7 +14,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, TCI.MOD_ID);
 
-    ///
+    //
 
     public static final RegistryObject<Item> TUTORIAL_ITEM = ITEMS.register("tutorial_item",
             () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT)));
