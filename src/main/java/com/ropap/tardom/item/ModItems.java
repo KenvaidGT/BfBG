@@ -20,16 +20,19 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT)));
 
     public static final RegistryObject<Item> KHORNE_AX_BLADE = ITEMS.register("khorne_ax_blade",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT).stacksTo(1)));
 
     public static final RegistryObject<Item> KHORNE_AX_HANDLE = ITEMS.register("khorne_ax_handle",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT).stacksTo(1)));
 
     public static final RegistryObject<Item> KHORNE_AX_SPIKE = ITEMS.register("khorne_ax_spike",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT).stacksTo(1)));
 
     public static final RegistryObject<Item> KHORNE_AX_POMMEL = ITEMS.register("khorne_ax_pommel",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT).stacksTo(1)));
+
+    public static final RegistryObject<Item> KHORNE_AX_HEAD = ITEMS.register("khorne_ax_head",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT).stacksTo(1)));
 
     public static final RegistryObject<AxeItem> KHORNE_AXE = ITEMS.register("khorne_axe",
             () -> new AxeItem(ModItemTier.AXE, 18, -3.2f, new Item.Properties().tab(ModItemGroup.CARROT)));
