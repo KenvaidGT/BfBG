@@ -3,6 +3,7 @@ package com.ropap.tardom.item;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ShieldItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -36,6 +37,9 @@ public class ModItems {
 
     public static final RegistryObject<AxeItem> KHORNE_AXE = ITEMS.register("khorne_axe",
             () -> new AxeItem(ModItemTier.AXE, 18, -3.2f, new Item.Properties().tab(ModItemGroup.CARROT)));
+
+    public static final RegistryObject<Item> CUSTOM_SHIELD = ITEMS.register("khorne_shield",
+            () -> new ShieldItem(new Item.Properties().tab(ModItemGroup.CARROT).durability(336)));
 
     //
 

@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" BH",
+		" ES",
+		"P  "
+	],
+	"key": {
+		"B": {
+			"item": "tci:khorne_ax_blade"
+		},
+		"H": {
+			"item": "tci:khorne_ax_head"
+		},
+		"E": {
+			"item": "tci:khorne_ax_handle"
+		},
+		"S": {
+			"item": "tci:khorne_ax_spike"
+		},
+		"P": {
+			"item": "tci:khorne_ax_pommel"
+		}
+	},
+	"result": {
+		"item": "tci:khorne_axe"
+	}
+}
