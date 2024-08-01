@@ -6,6 +6,15 @@
 		"1": "tci:item/skull",
 		"particle": "tci:item/khorne_shield"
 	},
+	"overrides": [
+		{
+			"predicate": {
+				"blocking": 1
+			},
+			"model": "tci:item/shield_blocking"
+		}
+	],
+
 	"elements": [
 		{
 			"from": [7.5, 0, 1.5],
