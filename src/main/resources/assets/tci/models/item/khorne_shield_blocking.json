@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "tci:item/khorne_shield,",
 		"1": "tci:item/skull",
-		"particle": "khorne_shield"
+		"particle": "tci:item/khorne_shield"
 	},
 	"elements": [
 		{

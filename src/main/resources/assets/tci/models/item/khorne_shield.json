@@ -6,7 +6,6 @@
 		"1": "tci:item/skull",
 		"particle": "tci:item/khorne_shield"
 	},
-
 	"elements": [
 		{
 			"from": [7.5, 0, 1.5],
@@ -725,14 +724,8 @@
 		}
 	],
 	"overrides": [
-		{
-			"predicate": {
-				"blocking": 1
-			},
-			"model": "tci:item/khorne_shield_blocking"
-		}
+		{"predicate": {"blocking": 1}, "model": "tci:item/khorne_shield_blocking"}
 	],
-
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [169.03, 1.18, -179.38],
@@ -745,19 +738,19 @@
 		},
 		"firstperson_righthand": {
 			"rotation": [-174.99, -90, -174.93],
-			"translation": [4, -7, -4.75]
+			"translation": [4, -9, -4.75]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, 90, 0],
-			"translation": [4.75, -7, -4.75]
+			"translation": [4.75, -9, -4.75]
 		},
 		"ground": {
 			"translation": [0, 14.25, 0]
 		},
 		"gui": {
-			"rotation": [0, 90, 0],
+			"rotation": [0, 60.5, 0],
 			"translation": [0, 0.25, 0],
-			"scale": [0.4, 0.4, 0.4]
+			"scale": [0.35, 0.35, 0.35]
 		},
 		"fixed": {
 			"rotation": [0, -90, 0],
