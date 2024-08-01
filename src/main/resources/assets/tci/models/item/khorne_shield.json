@@ -2,18 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "khorne_shield",
-		"1": "tci:skull",
-		"particle": "khorne_shield"
+		"0": "tci:item/khorne_shield",
+		"1": "tci:item/skull",
+		"particle": "tci:item/khorne_shield"
 	},
-	"overrides": [
-		{
-			"predicate": {
-				"blocking": 1
-			},
-			"model": "tci:item/shield_blocking"
-		}
-	],
 
 	"elements": [
 		{
@@ -732,6 +724,15 @@
 			}
 		}
 	],
+	"overrides": [
+		{
+			"predicate": {
+				"blocking": 1
+			},
+			"model": "tci:item/khorne_shield_blocking"
+		}
+	],
+
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [169.03, 1.18, -179.38],
