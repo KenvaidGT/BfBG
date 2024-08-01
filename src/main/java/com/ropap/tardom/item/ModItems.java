@@ -16,29 +16,36 @@ public class ModItems {
 
     //
 
-    public static final RegistryObject<Item> TUTORIAL_ITEM = ITEMS.register("tutorial_item",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT)));
-
     public static final RegistryObject<Item> KHORNE_AX_BLADE = ITEMS.register("khorne_ax_blade",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT).stacksTo(1)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(1)));
 
     public static final RegistryObject<Item> KHORNE_AX_HANDLE = ITEMS.register("khorne_ax_handle",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT).stacksTo(1)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(1)));
 
     public static final RegistryObject<Item> KHORNE_AX_SPIKE = ITEMS.register("khorne_ax_spike",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT).stacksTo(1)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(1)));
 
     public static final RegistryObject<Item> KHORNE_AX_POMMEL = ITEMS.register("khorne_ax_pommel",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT).stacksTo(1)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(1)));
 
     public static final RegistryObject<Item> KHORNE_AX_HEAD = ITEMS.register("khorne_ax_head",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.CARROT).stacksTo(1)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(1)));
 
     public static final RegistryObject<AxeItem> KHORNE_AXE = ITEMS.register("khorne_axe",
-            () -> new AxeItem(ModItemTier.AXE, 18, -3.2f, new Item.Properties().tab(ModItemGroup.CARROT)));
+            () -> new AxeItem(ModItemTier.AXE, 18, -3.2f, new Item.Properties().tab(ModItemGroup.BfBG)));
 
     public static final RegistryObject<Item> KHORNE_SHIELD = ITEMS.register("khorne_shield",
-            () -> new ShieldItem(new Item.Properties().tab(ModItemGroup.CARROT).durability(336)));
+            () -> new ShieldItem(new Item.Properties().tab(ModItemGroup.BfBG).durability(336)));
+
+    public static final RegistryObject<Item> BLOOD_INGOT = ITEMS.register("blood_ingot",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(64)));
+
+    public static final RegistryObject<Item> BLACK_STEEL_INGOT = ITEMS.register("black_steel_ingot",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(64)));
+
+    public static final RegistryObject<Item> BRASS_INGOT = ITEMS.register("brass_ingot",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(64)));
+
 
     //
 

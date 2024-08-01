@@ -1,0 +1,15 @@
+{
+  "item.bfbg.tutorial_item": "Tutorial Item",
+  "item.bfbg.khorne_axe": "Khorne Axe",
+  "item.bfbg.khorne_ax_blade": "Khorne ax blade",
+  "item.bfbg.khorne_ax_handle": "Khorne ax handle",
+  "item.bfbg.khorne_ax_spike": "Khorne ax spike",
+  "item.bfbg.khorne_ax_pommel": "Khorne ax pommel",
+  "item.bfbg.khorne_ax_head": "Khorne ax head",
+  "item.bfbg.khorne_shield": "Khorne Shield",
+  "item.bfbg.blood_ingot": "Blood Ingot",
+  "item.bfbg.black_steel_ingot": "Black steel Ingot",
+  "item.bfbg.brass_ingot": "Brass Ingot",
+
+  "itemGroup.bfbg": "Tardom Custom Items"
+}

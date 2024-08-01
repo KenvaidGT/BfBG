@@ -1,0 +1,15 @@
+{
+  "item.bfbg.khorne_ax_blade": "Лезвие топора Кхорна",
+  "item.bfbg.khorne_ax_handle": "Рукоятка топора Кхорна",
+  "item.bfbg.khorne_ax_pommel": "Навершие топора Кхорна",
+  "item.bfbg.khorne_ax_spike": "Шип топора Кхорна",
+  "item.bfbg.khorne_axe": "Топор Кхорна",
+  "item.bfbg.tutorial_item": "Обучающий предмет",
+  "item.bfbg.khorne_ax_head": "Обух топора Кхорна",
+  "item.bfbg.khorne_shield": "Щит Кхорна",
+  "item.bfbg.blood_ingot": "Кровавый слиток",
+  "item.bfbg.black_steel_ingot": "Черно стальной слиток",
+  "item.bfbg.brass_ingot": "Латунный слиток",
+
+  "itemGroup.bfbg": "Tardom Custom Items"
+}

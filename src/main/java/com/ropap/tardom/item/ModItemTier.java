@@ -8,8 +8,7 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
-    TEST(1, 10, 1, 10, 5, () -> Ingredient.of(ModItems.TUTORIAL_ITEM.get())),
-    AXE(1, 3000, 10, -1, 5, () -> Ingredient.of(ModItems.TUTORIAL_ITEM.get()));
+    AXE(1, 3000, 10, -1, 5, () -> Ingredient.of(ModItems.BLOOD_INGOT.get()));
 
     private final int harvestLevel;
     private final int maxUses;

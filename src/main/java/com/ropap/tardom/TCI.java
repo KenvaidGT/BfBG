@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 @Mod(TCI.MOD_ID)
 public class TCI {
-    public static final String MOD_ID = "tci";
+    public static final String MOD_ID = "bfbg";
     private static final Logger LOGGER = LogManager.getLogger();
 
     public TCI() {
