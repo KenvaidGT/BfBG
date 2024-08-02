@@ -2,6 +2,7 @@ package com.ropap.tardom.item;
 
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.MilkBucketItem;
 import net.minecraft.item.ShieldItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
@@ -47,6 +48,14 @@ public class ModItems {
 
     public static final RegistryObject<Item> ZINC_INGOT = ITEMS.register("materials/zinc_ingot",
             () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(64)));
+
+    public static final RegistryObject<Item> BLOODY_SCRAPS = ITEMS.register("materials/bloody_scraps",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(64)));
+
+    //Other
+
+    //public static final RegistryObject<Item> BLOOD_BUCKET = ITEMS.register("other/blood_bucket",
+            //() -> new MilkBucketItem(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(1)));
 
     // Instruments:
 
