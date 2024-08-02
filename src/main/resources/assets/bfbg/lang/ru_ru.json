@@ -1,15 +1,19 @@
 {
-  "item.bfbg.khorne_ax_blade": "Лезвие топора Кхорна",
-  "item.bfbg.khorne_ax_handle": "Рукоятка топора Кхорна",
-  "item.bfbg.khorne_ax_pommel": "Навершие топора Кхорна",
-  "item.bfbg.khorne_ax_spike": "Шип топора Кхорна",
-  "item.bfbg.khorne_axe": "Топор Кхорна",
-  "item.bfbg.tutorial_item": "Обучающий предмет",
-  "item.bfbg.khorne_ax_head": "Обух топора Кхорна",
-  "item.bfbg.khorne_shield": "Щит Кхорна",
-  "item.bfbg.blood_ingot": "Кровавый слиток",
-  "item.bfbg.black_steel_ingot": "Черно стальной слиток",
-  "item.bfbg.brass_ingot": "Латунный слиток",
+  //craft_parts.:
+  "item.bfbg.craft_parts.khorne_ax_blade": "Клинок топора Кхорна",
+  "item.bfbg.craft_parts.khorne_ax_handle": "Рукоять топора Кхорна",
+  "item.bfbg.craft_parts.khorne_ax_spike": "Khorne ax spike",
+  "item.bfbg.craft_parts.khorne_ax_pommel": "Khorne ax pommel",
+  "item.bfbg.craft_parts.khorne_ax_head": "Khorne ax head",
 
-  "itemGroup.bfbg": "Tardom Custom Items"
+  //instruments.:
+  "item.bfbg.instruments.khorne_axe": "Топор Кхорна",
+  "item.bfbg.instruments.khorne_shield": "Щит Кхорна",
+
+  //materials.:
+  "item.bfbg.materials.blood_ingot": "Кровавый слиток",
+  "item.bfbg.materials.black_steel_ingot": "Чёрный слиток стали",
+  "item.bfbg.materials.brass_ingot": "Латуневый слиток",
+
+  "itemGroup.bfbg": "Blood for Blood God"
 }

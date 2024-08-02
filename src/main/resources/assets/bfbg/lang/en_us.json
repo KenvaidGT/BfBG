@@ -1,15 +1,19 @@
 {
-  "item.bfbg.tutorial_item": "Tutorial Item",
-  "item.bfbg.khorne_axe": "Khorne Axe",
-  "item.bfbg.khorne_ax_blade": "Khorne ax blade",
-  "item.bfbg.khorne_ax_handle": "Khorne ax handle",
-  "item.bfbg.khorne_ax_spike": "Khorne ax spike",
-  "item.bfbg.khorne_ax_pommel": "Khorne ax pommel",
-  "item.bfbg.khorne_ax_head": "Khorne ax head",
-  "item.bfbg.khorne_shield": "Khorne Shield",
-  "item.bfbg.blood_ingot": "Blood Ingot",
-  "item.bfbg.black_steel_ingot": "Black steel Ingot",
-  "item.bfbg.brass_ingot": "Brass Ingot",
+  //craft_parts.:
+  "item.bfbg.craft_parts.khorne_ax_blade": "Khorne ax blade",
+  "item.bfbg.craft_parts.khorne_ax_handle": "Khorne ax handle",
+  "item.bfbg.craft_parts.khorne_ax_spike": "Khorne ax spike",
+  "item.bfbg.craft_parts.khorne_ax_pommel": "Khorne ax pommel",
+  "item.bfbg.craft_parts.khorne_ax_head": "Khorne ax head",
 
-  "itemGroup.bfbg": "Tardom Custom Items"
+  //instruments.:
+  "item.bfbg.instruments.khorne_axe": "Khorne Axe",
+  "item.bfbg.instruments.khorne_shield": "Khorne Shield",
+
+  //materials.:
+  "item.bfbg.materials.blood_ingot": "Blood Ingot",
+  "item.bfbg.materials.black_steel_ingot": "Black steel Ingot",
+  "item.bfbg.materials.brass_ingot": "Brass Ingot",
+
+  "itemGroup.bfbg": "Blood for Blood God"
 }

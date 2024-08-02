@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"layer0": "bfbg:item/brass_ingot"
+		"layer0": "bfbg:item/materials/blood_ingot"
 	}
 }
