@@ -18,5 +18,8 @@
   "item.bfbg.materials.zinc_ingot": "Zinc ingot",
   "item.bfbg.materials.bloody_scraps": "Bloody Scraps",
 
+  //other
+  "item.bfbg.other.blood_bucket": "Blood bucket",
+
   "itemGroup.bfbg": "Blood for Blood God"
 }

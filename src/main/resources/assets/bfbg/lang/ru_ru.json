@@ -18,5 +18,8 @@
   "item.bfbg.materials.zinc_ingot": "Цинковый слиток",
   "item.bfbg.materials.bloody_scraps": "Кровавые ошметки",
 
+  //other
+  "item.bfbg.other.blood_bucket": "Ведро крови",
+
   "itemGroup.bfbg": "Blood for Blood God"
 }
