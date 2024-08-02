@@ -3,6 +3,7 @@ package com.ropap.tardom.item.custom;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.item.MilkBucketItem;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
@@ -23,4 +24,14 @@ public class BloodBucket extends MilkBucketItem {
         }
         return super.finishUsingItem(stack, world, entity);
     }
+    @Override
+    public boolean hasContainerItem(ItemStack stack) {
+        return true;
+    }
+
+    @Override
+    public ItemStack getContainerItem(ItemStack itemStack) {
+        return new ItemStack(Items.BUCKET);
+    }
 }
+
