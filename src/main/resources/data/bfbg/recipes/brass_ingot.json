@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CZZ",
+		"IIC",
+		"ZCI"
+	],
+	"key": {
+		"C": {
+			"item": "bfbg:materials/copper_ingot"
+		},
+		"Z": {
+			"item": "bfbg:materials/zinc_ingot"
+		},
+		"I": {
+			"item": "minecraft:iron_ingot"
+		}
+	},
+	"result": {
+		"item": "bfbg:materials/brass_ingot"
+	}
+}
