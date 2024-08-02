@@ -45,6 +45,9 @@ public class ModItems {
     public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("materials/copper_ingot",
             () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(64)));
 
+    public static final RegistryObject<Item> ZINC_INGOT = ITEMS.register("materials/zinc_ingot",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(64)));
+
     // Instruments:
 
     public static final RegistryObject<AxeItem> KHORNE_AXE = ITEMS.register("instruments/khorne_axe",
