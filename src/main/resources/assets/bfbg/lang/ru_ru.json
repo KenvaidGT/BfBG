@@ -14,6 +14,13 @@
   "item.bfbg.materials.blood_ingot": "Кровавый слиток",
   "item.bfbg.materials.black_steel_ingot": "Чёрный слиток стали",
   "item.bfbg.materials.brass_ingot": "Латуневый слиток",
+  "item.bfbg.materials.copper_ingot": "Медный слиток",
+  "item.bfbg.materials.zinc_ingot": "Цинковый слиток",
+  "item.bfbg.materials.bloody_scraps": "Кровавые ошметки",
+  "item.bfbg.materials.blood_god_rune": "Руна бога крови",
+
+  //other
+  "item.bfbg.other.blood_bucket": "Ведро крови",
 
   "itemGroup.bfbg": "Blood for Blood God"
 }

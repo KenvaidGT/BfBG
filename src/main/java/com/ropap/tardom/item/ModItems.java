@@ -1,5 +1,6 @@
 package com.ropap.tardom.item;
 
+import com.ropap.tardom.item.custom.BloodBucket;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ShieldItem;
@@ -44,6 +45,21 @@ public class ModItems {
 
     public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("materials/copper_ingot",
             () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(64)));
+
+    public static final RegistryObject<Item> ZINC_INGOT = ITEMS.register("materials/zinc_ingot",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(64)));
+
+    public static final RegistryObject<Item> BLOODY_SCRAPS = ITEMS.register("materials/bloody_scraps",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(64)));
+
+    public static final RegistryObject<Item> BLOOD_GOD_RUNE = ITEMS.register("materials/blood_god_rune",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(1)));
+
+    //Other
+
+    public static final RegistryObject<Item> BLOOD_BUCKET = ITEMS.register("other/blood_bucket",
+            () -> new BloodBucket(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(1)));
+
 
     // Instruments:
 

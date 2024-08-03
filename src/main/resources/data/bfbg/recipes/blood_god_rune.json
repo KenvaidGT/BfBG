@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#Dl",
+    "BXB",
+    "lr#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "l": {
+      "item": "bfbg:other/blood_bucket"
+    },
+    "B": {
+      "item": "bfbg:materials/black_steel_ingot"
+    },
+    "r": {
+      "item": "bfbg:materials/blood_ingot"
+    },
+    "X": {
+      "item": "bfbg:materials/bloody_scraps"
+    }
+  },
+  "result": {
+    "item": "bfbg:materials/blood_god_rune"
+  }
+}

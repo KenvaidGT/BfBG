@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"###",
+		"#B#",
+		"###"
+	],
+	"key": {
+		"B": {
+			"item": "minecraft:bucket"
+		},
+		"#": {
+			"item": "bfbg:materials/bloody_scraps"
+		}
+	},
+	"result": {
+		"item": "bfbg:other/blood_bucket"
+	}
+}

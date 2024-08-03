@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" BH",
+		" ES",
+		"P  "
+	],
+	"key": {
+		"B": {
+			"item": "bfbg:craft_parts/khorne_ax_blade"
+		},
+		"H": {
+			"item": "bfbg:craft_parts/khorne_ax_head"
+		},
+		"E": {
+			"item": "bfbg:craft_parts/khorne_ax_handle"
+		},
+		"S": {
+			"item": "bfbg:craft_parts/khorne_ax_spike"
+		},
+		"P": {
+			"item": "bfbg:craft_parts/khorne_ax_pommel"
+		}
+	},
+	"result": {
+		"item": "bfbg:instruments/khorne_axe"
+	}
+}
