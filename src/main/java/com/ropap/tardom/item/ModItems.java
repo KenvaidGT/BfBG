@@ -1,6 +1,8 @@
 package com.ropap.tardom.item;
 
 import com.ropap.tardom.item.custom.BloodBucket;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ShieldItem;
@@ -68,6 +70,13 @@ public class ModItems {
 
     public static final RegistryObject<Item> KHORNE_SHIELD = ITEMS.register("instruments/khorne_shield",
             () -> new ShieldItem(new Item.Properties().tab(ModItemGroup.BfBG).durability(888)));
+
+    //armor:
+
+    public static final RegistryObject<Item> KHORNE_BOOTS = ITEMS.register("armor/khorne_boots",
+            () -> new ArmorItem(ModArmorMaterial.EXAMPLE, EquipmentSlotType.FEET, new Item.Properties().tab(ModItemGroup.BfBG)));
+
+
 
 
     //

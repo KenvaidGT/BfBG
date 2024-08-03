@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"1": "texture123423rab",
-		"particle": "texture123423rab"
+		"1": "bfbg:item/armor/khorne_armor",
+		"particle": "bfbg:item/armor/khorne_armor"
 	},
 	"elements": [
 		{
