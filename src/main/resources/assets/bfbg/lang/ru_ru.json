@@ -22,5 +22,8 @@
   //other
   "item.bfbg.other.blood_bucket": "Ведро крови",
 
+  //armor
+  "item.bfbg.armor.khorne_boots": "Кеды Кхорна",
+
   "itemGroup.bfbg": "Blood for Blood God"
 }
