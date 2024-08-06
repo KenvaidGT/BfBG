@@ -23,7 +23,10 @@
   "item.bfbg.other.blood_bucket": "Ведро крови",
 
   //armor
-  "item.bfbg.armor.khorne_boots": "Кеды Кхорна",
+  "item.bfbg.armor.norsca_armor_tier3_helmet": "Шлем норскийца",
+  "item.bfbg.armor.norsca_armor_tier3_chestplate": "Нагрудник норскийца",
+  "item.bfbg.armor.norsca_armor_tier3_leggings": "Юбка норскийца",
+  "item.bfbg.armor.norsca_armor_tier3_boots": "Ботинки норскийца",
 
   "itemGroup.bfbg": "Blood for Blood God"
 }

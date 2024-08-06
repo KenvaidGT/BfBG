@@ -2,7 +2,6 @@ package com.ropap.tardom.item;
 
 import com.ropap.tardom.item.custom.BloodBucket;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ShieldItem;
@@ -73,8 +72,14 @@ public class ModItems {
 
     //armor:
 
-    public static final RegistryObject<Item> KHORNE_BOOTS = ITEMS.register("armor/khorne_boots",
-            () -> new ArmorItem(ModArmorMaterial.EXAMPLE, EquipmentSlotType.FEET, new Item.Properties().tab(ModItemGroup.BfBG)));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_HELMET = ITEMS.register("armor/norsca_armor_tier3_helmet",
+            () -> new CustomArmorItem(ModArmorMaterial.NORSCAT3, EquipmentSlotType.HEAD, new Item.Properties().tab(ModItemGroup.BfBG)));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_CHESTPLATE = ITEMS.register("armor/norsca_armor_tier3_chestplate",
+            () -> new CustomArmorItem(ModArmorMaterial.NORSCAT3, EquipmentSlotType.CHEST, new Item.Properties().tab(ModItemGroup.BfBG)));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_LEGGINGS = ITEMS.register("armor/norsca_armor_tier3_leggings",
+            () -> new CustomArmorItem(ModArmorMaterial.NORSCAT3, EquipmentSlotType.LEGS, new Item.Properties().tab(ModItemGroup.BfBG)));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_BOOTS = ITEMS.register("armor/norsca_armor_tier3_boots",
+            () -> new CustomArmorItem(ModArmorMaterial.NORSCAT3, EquipmentSlotType.FEET, new Item.Properties().tab(ModItemGroup.BfBG)));
 
 
 

@@ -724,7 +724,7 @@
 		}
 	],
 	"overrides": [
-		{"predicate": {"blocking": 1}, "model": "bfbg:item/khorne_shield_blocking"}
+		{"predicate": {"blocking": 1}, "model": "bfbg:item/instruments/khorne_shield_blocking"}
 	],
 	"display": {
 		"thirdperson_righthand": {

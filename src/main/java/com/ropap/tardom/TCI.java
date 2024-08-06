@@ -2,6 +2,7 @@ package com.ropap.tardom;
 
 import com.ropap.tardom.item.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.ObjectHolder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,6 +24,9 @@ import java.util.stream.Collectors;
 public class TCI {
     public static final String MOD_ID = "bfbg";
     private static final Logger LOGGER = LogManager.getLogger();
+
+    @ObjectHolder(MOD_ID + ":khorne_axe")
+    public static final Item KHORNE_AXE = null;
 
     public TCI() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
