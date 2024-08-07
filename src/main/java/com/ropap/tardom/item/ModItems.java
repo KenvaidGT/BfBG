@@ -1,6 +1,8 @@
 package com.ropap.tardom.item;
 
 import com.ropap.tardom.item.custom.BloodBucket;
+import com.ropap.tardom.item.geko.item.NorscaArmorTier1Item;
+import com.ropap.tardom.item.geko.item.NorscaArmorTier3Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
@@ -72,14 +74,24 @@ public class ModItems {
 
     //armor:
 
-    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_HELMET = ITEMS.register("armor/norsca_armor_tier3_helmet",
-            () -> new CustomArmorItem(ModArmorMaterial.NORSCAT3, EquipmentSlotType.HEAD, new Item.Properties().tab(ModItemGroup.BfBG)));
-    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_CHESTPLATE = ITEMS.register("armor/norsca_armor_tier3_chestplate",
-            () -> new CustomArmorItem(ModArmorMaterial.NORSCAT3, EquipmentSlotType.CHEST, new Item.Properties().tab(ModItemGroup.BfBG)));
-    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_LEGGINGS = ITEMS.register("armor/norsca_armor_tier3_leggings",
-            () -> new CustomArmorItem(ModArmorMaterial.NORSCAT3, EquipmentSlotType.LEGS, new Item.Properties().tab(ModItemGroup.BfBG)));
-    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_BOOTS = ITEMS.register("armor/norsca_armor_tier3_boots",
-            () -> new CustomArmorItem(ModArmorMaterial.NORSCAT3, EquipmentSlotType.FEET, new Item.Properties().tab(ModItemGroup.BfBG)));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_HELMET = ITEMS.register("armor/norsca_armor_tier3/norsca_armor_tier3_helmet",
+            () -> new NorscaArmorTier3Item(EquipmentSlotType.HEAD));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_CHESTPLATE = ITEMS.register("armor/norsca_armor_tier3/norsca_armor_tier3_chestplate",
+            () -> new NorscaArmorTier3Item(EquipmentSlotType.CHEST));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_LEGGINGS = ITEMS.register("armor/norsca_armor_tier3/norsca_armor_tier3_leggings",
+            () -> new NorscaArmorTier3Item(EquipmentSlotType.LEGS));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER3_BOOTS = ITEMS.register("armor/norsca_armor_tier3/norsca_armor_tier3_boots",
+            () -> new NorscaArmorTier3Item(EquipmentSlotType.FEET));
+
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER1_HELMET = ITEMS.register("armor/norsca_armor_tier1/norsca_armor_tier1_helmet",
+            () -> new NorscaArmorTier1Item(EquipmentSlotType.HEAD));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER1_CHESTPLATE = ITEMS.register("armor/norsca_armor_tier1/norsca_armor_tier1_chestplate",
+            () -> new NorscaArmorTier1Item(EquipmentSlotType.CHEST));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER1_LEGGINGS = ITEMS.register("armor/norsca_armor_tier1/norsca_armor_tier1_leggings",
+            () -> new NorscaArmorTier1Item(EquipmentSlotType.LEGS));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER1_BOOTS = ITEMS.register("armor/norsca_armor_tier1/norsca_armor_tier1_boots",
+            () -> new NorscaArmorTier1Item(EquipmentSlotType.FEET));
+
 
 
 
