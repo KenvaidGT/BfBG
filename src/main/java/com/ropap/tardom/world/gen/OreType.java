@@ -6,7 +6,8 @@ import com.ropap.tardom.block.ModBlocks;
 
 public enum OreType {
 
-    ZINC_ORE(Lazy.of(ModBlocks.ZINC_ORE), 6, 0, 30, 5);
+    ZINC_ORE(Lazy.of(ModBlocks.ZINC_ORE), 6, 0, 30, 5),
+    COPPER_ORE(Lazy.of(ModBlocks.COPPER_ORE), 6, 0, 30, 5);
 
     private final Lazy<Block> block;
     private final int maxVeinSize;

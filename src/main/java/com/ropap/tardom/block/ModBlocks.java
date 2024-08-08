@@ -21,6 +21,7 @@ public class ModBlocks {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TCI.MOD_ID);
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TCI.MOD_ID);
 
+
     public static final RegistryObject<Block> ZINC_ORE = registerBlock("block/ore/zinc_ore",
             () -> new Block(AbstractBlock.Properties.of(Material.STONE)
                     .strength(2.5f)
@@ -30,6 +31,17 @@ public class ModBlocks {
 
     public static final RegistryObject<Item> ZINC_ORE_ITEM = ITEMS.register("block/ore/zinc_ore",
             () -> new BlockItem(ZINC_ORE.get(), new Item.Properties()));
+
+    public static final RegistryObject<Block> COPPER_ORE = registerBlock("block/ore/copper_ore",
+            () -> new Block(AbstractBlock.Properties.of(Material.STONE)
+                    .strength(2.5f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(value -> 0)));
+
+    public static final RegistryObject<Item> COPPER_ORE_ITEM = ITEMS.register("block/ore/copper_ore",
+            () -> new BlockItem(COPPER_ORE.get(), new Item.Properties()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

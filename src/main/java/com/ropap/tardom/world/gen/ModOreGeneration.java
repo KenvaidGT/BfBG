@@ -18,6 +18,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 public class ModOreGeneration {
     public static void generateOres(final BiomeLoadingEvent event) {
         spawnOreInOverworldInAllBiomes(OreType.ZINC_ORE, event);
+        spawnOreInOverworldInAllBiomes(OreType.COPPER_ORE, event);
     }
 
     private static OreFeatureConfig getOverworldFeatureConfig(OreType ore) {
