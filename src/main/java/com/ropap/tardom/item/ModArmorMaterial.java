@@ -11,13 +11,14 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements IArmorMaterial {
-    NORSCAT3("norsca", 25, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 2.0F, 0.0F, () -> {
-        return Ingredient.of(Items.DIAMOND);
+    NORSCAT3("norsca_t3", 25, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 2.0F, 0.0F, () -> {
+        return Ingredient.of(Items.IRON_INGOT);
     }),
 
-    SECOND("second", 37, new int[]{4, 7, 9, 4}, 30, SoundEvents.ARMOR_EQUIP_IRON, 3.0F, 0.1F, () -> {
+    NORSCAT1("norsca_t1", 37, new int[]{4, 7, 9, 4}, 30, SoundEvents.ARMOR_EQUIP_IRON, 3.0F, 0.1F, () -> {
         return Ingredient.of(Items.IRON_INGOT);
     });
+
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
     private final String name;

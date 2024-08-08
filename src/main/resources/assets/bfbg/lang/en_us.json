@@ -23,10 +23,15 @@
   "item.bfbg.other.blood_bucket": "Blood bucket",
 
   //armor
-  "item.bfbg.armor.norsca_armor_tier3_helmet": "Norsca helmet",
-  "item.bfbg.armor.norsca_armor_tier3_chestplate": "Norsca chestplate",
-  "item.bfbg.armor.norsca_armor_tier3_leggings": "Norsca leggings",
-  "item.bfbg.armor.norsca_armor_tier3_boots": "Norsca boots",
+  "item.bfbg.armor.norsca_armor_tier3.norsca_armor_tier3_helmet": "Norsca helmet",
+  "item.bfbg.armor.norsca_armor_tier3.norsca_armor_tier3_chestplate": "Norsca chestplate",
+  "item.bfbg.armor.norsca_armor_tier3.norsca_armor_tier3_leggings": "Norsca leggings",
+  "item.bfbg.armor.norsca_armor_tier3.norsca_armor_tier3_boots": "Norsca boots",
+
+  "item.bfbg.armor.norsca_armor_tier1.norsca_armor_tier1_helmet": "Norsca helmet",
+  "item.bfbg.armor.norsca_armor_tier1.norsca_armor_tier1_chestplate": "Norsca chestplate",
+  "item.bfbg.armor.norsca_armor_tier1.norsca_armor_tier1_leggings": "Norsca leggings",
+  "item.bfbg.armor.norsca_armor_tier1.norsca_armor_tier1_boots": "Norsca boots",
 
   "itemGroup.bfbg": "Blood for Blood God"
 }
