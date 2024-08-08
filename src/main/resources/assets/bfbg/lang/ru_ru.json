@@ -33,6 +33,9 @@
   "item.bfbg.armor.norsca_armor_tier1.norsca_armor_tier1_leggings": "Юбка норскийца",
   "item.bfbg.armor.norsca_armor_tier1.norsca_armor_tier1_boots": "Ботинки норскийца",
 
+  //block
+  "block.bfbg.block.ore.zinc": "Цинковая руда",
+
 
 
   "itemGroup.bfbg": "Blood for Blood God"

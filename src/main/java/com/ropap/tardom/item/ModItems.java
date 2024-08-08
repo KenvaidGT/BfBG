@@ -5,6 +5,7 @@ import com.ropap.tardom.item.geko.item.NorscaArmorTier1Item;
 import com.ropap.tardom.item.geko.item.NorscaArmorTier3Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.AxeItem;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ShieldItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -12,6 +13,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import com.ropap.tardom.TCI;
+import com.ropap.tardom.block.ModBlocks;
 
 public class ModItems {
 
@@ -58,10 +60,14 @@ public class ModItems {
     public static final RegistryObject<Item> BLOOD_GOD_RUNE = ITEMS.register("materials/blood_god_rune",
             () -> new Item(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(1)));
 
+
+
     //Other
 
     public static final RegistryObject<Item> BLOOD_BUCKET = ITEMS.register("other/blood_bucket",
             () -> new BloodBucket(new Item.Properties().tab(ModItemGroup.BfBG).stacksTo(1)));
+
+
 
 
     // Instruments:

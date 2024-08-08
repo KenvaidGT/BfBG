@@ -1,5 +1,6 @@
 package com.ropap.tardom;
 
+import com.ropap.tardom.block.ModBlocks;
 import com.ropap.tardom.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -32,6 +33,7 @@ public class TCI {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::enqueueIMC);
