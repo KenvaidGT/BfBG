@@ -3,8 +3,10 @@ package com.ropap.tardom;
 import com.ropap.tardom.item.CustomArmorItem;
 import com.ropap.tardom.item.ModItems;
 import com.ropap.tardom.item.geko.item.NorscaArmorTier1Item;
+import com.ropap.tardom.item.geko.item.NorscaArmorTier2Item;
 import com.ropap.tardom.item.geko.item.NorscaArmorTier3Item;
 import com.ropap.tardom.item.geko.renderer.NorscaArmorTier1Renderer;
+import com.ropap.tardom.item.geko.renderer.NorscaArmorTier2Renderer;
 import com.ropap.tardom.item.geko.renderer.NorscaArmorTier3Renderer;
 import net.minecraft.item.ItemModelsProperties;
 import net.minecraft.util.ResourceLocation;
@@ -20,6 +22,7 @@ public class ClientEventBusSubscriber {
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
         GeoArmorRenderer.registerArmorRenderer(NorscaArmorTier1Item.class, new NorscaArmorTier1Renderer());
+        GeoArmorRenderer.registerArmorRenderer(NorscaArmorTier2Item.class, new NorscaArmorTier2Renderer());
         GeoArmorRenderer.registerArmorRenderer(NorscaArmorTier3Item.class, new NorscaArmorTier3Renderer());
 
         ItemModelsProperties.register(ModItems.KHORNE_SHIELD.get(), new ResourceLocation("blocking"),

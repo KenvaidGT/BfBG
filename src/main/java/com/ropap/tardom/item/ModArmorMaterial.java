@@ -15,6 +15,11 @@ public enum ModArmorMaterial implements IArmorMaterial {
         return Ingredient.of(Items.IRON_INGOT);
     }),
 
+    NORSCAT2("norsca_t2", 25, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 2.0F, 0.0F, () -> {
+        return Ingredient.of(Items.IRON_INGOT);
+    }),
+
+
     NORSCAT1("norsca_t1", 37, new int[]{4, 7, 9, 4}, 30, SoundEvents.ARMOR_EQUIP_IRON, 3.0F, 0.1F, () -> {
         return Ingredient.of(Items.IRON_INGOT);
     });

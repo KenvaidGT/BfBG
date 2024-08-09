@@ -2,6 +2,7 @@ package com.ropap.tardom.item;
 
 import com.ropap.tardom.item.custom.BloodBucket;
 import com.ropap.tardom.item.geko.item.NorscaArmorTier1Item;
+import com.ropap.tardom.item.geko.item.NorscaArmorTier2Item;
 import com.ropap.tardom.item.geko.item.NorscaArmorTier3Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.AxeItem;
@@ -97,6 +98,15 @@ public class ModItems {
             () -> new NorscaArmorTier1Item(EquipmentSlotType.LEGS));
     public static final RegistryObject<Item> NORSCA_ARMOR_TIER1_BOOTS = ITEMS.register("armor/norsca_armor_tier1/norsca_armor_tier1_boots",
             () -> new NorscaArmorTier1Item(EquipmentSlotType.FEET));
+
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER2_HELMET = ITEMS.register("armor/norsca_armor_tier2/norsca_armor_tier2_helmet",
+            () -> new NorscaArmorTier2Item(EquipmentSlotType.HEAD));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER2_CHESTPLATE = ITEMS.register("armor/norsca_armor_tier2/norsca_armor_tier2_chestplate",
+            () -> new NorscaArmorTier2Item(EquipmentSlotType.CHEST));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER2_LEGGINGS = ITEMS.register("armor/norsca_armor_tier2/norsca_armor_tier2_leggings",
+            () -> new NorscaArmorTier2Item(EquipmentSlotType.LEGS));
+    public static final RegistryObject<Item> NORSCA_ARMOR_TIER2_BOOTS = ITEMS.register("armor/norsca_armor_tier2/norsca_armor_tier2_boots",
+            () -> new NorscaArmorTier2Item(EquipmentSlotType.FEET));
 
 
 
