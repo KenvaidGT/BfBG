@@ -96,8 +96,6 @@ public class ModItems {
             () -> new NorscaArmorTier1Item(EquipmentSlotType.CHEST));
     public static final RegistryObject<Item> NORSCA_ARMOR_TIER1_LEGGINGS = ITEMS.register("armor/norsca_armor_tier1/norsca_armor_tier1_leggings",
             () -> new NorscaArmorTier1Item(EquipmentSlotType.LEGS));
-    public static final RegistryObject<Item> NORSCA_ARMOR_TIER1_BOOTS = ITEMS.register("armor/norsca_armor_tier1/norsca_armor_tier1_boots",
-            () -> new NorscaArmorTier1Item(EquipmentSlotType.FEET));
 
     public static final RegistryObject<Item> NORSCA_ARMOR_TIER2_HELMET = ITEMS.register("armor/norsca_armor_tier2/norsca_armor_tier2_helmet",
             () -> new NorscaArmorTier2Item(EquipmentSlotType.HEAD));
@@ -105,8 +103,6 @@ public class ModItems {
             () -> new NorscaArmorTier2Item(EquipmentSlotType.CHEST));
     public static final RegistryObject<Item> NORSCA_ARMOR_TIER2_LEGGINGS = ITEMS.register("armor/norsca_armor_tier2/norsca_armor_tier2_leggings",
             () -> new NorscaArmorTier2Item(EquipmentSlotType.LEGS));
-    public static final RegistryObject<Item> NORSCA_ARMOR_TIER2_BOOTS = ITEMS.register("armor/norsca_armor_tier2/norsca_armor_tier2_boots",
-            () -> new NorscaArmorTier2Item(EquipmentSlotType.FEET));
 
 
 

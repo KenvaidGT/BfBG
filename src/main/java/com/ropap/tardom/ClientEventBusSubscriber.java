@@ -1,5 +1,7 @@
 package com.ropap.tardom;
 
+import com.ropap.tardom.entity.ModEntityTypes;
+import com.ropap.tardom.entity.custom.NorscaT1Entity;
 import com.ropap.tardom.item.CustomArmorItem;
 import com.ropap.tardom.item.ModItems;
 import com.ropap.tardom.item.geko.item.NorscaArmorTier1Item;
@@ -11,6 +13,7 @@ import com.ropap.tardom.item.geko.renderer.NorscaArmorTier3Renderer;
 import net.minecraft.item.ItemModelsProperties;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -28,4 +31,10 @@ public class ClientEventBusSubscriber {
         ItemModelsProperties.register(ModItems.KHORNE_SHIELD.get(), new ResourceLocation("blocking"),
                 (stack, world, entity) -> entity != null && entity.isUsingItem() && entity.getUseItem() == stack ? 1.0F : 0.0F);
     }
+
+    @SubscribeEvent
+    public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
+        event.put(ModEntityTypes.NORSCA_T1.get(), NorscaT1Entity.setAttributes());
+    }
+
 }
