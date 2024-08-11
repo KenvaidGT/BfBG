@@ -81,6 +81,7 @@ public class NorscaT1Entity extends MonsterEntity implements IAnimatable {
     }
 
 
+
     @Override
     public AnimationFactory getFactory() {
         return this.factory;
