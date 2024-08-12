@@ -34,14 +34,8 @@ public class NorscaT1Entity extends MonsterEntity implements IAnimatable {
 
     @Override
     protected float getStandingEyeHeight(Pose pose, EntitySize size) {
-        return 1.74F; // Значение аналогично высоте глаз игрока
+        return 1.74F;
     }
-
-    @Override
-    protected PathNavigator createNavigation(World world) {
-        return new GroundPathNavigator(this, world); // Используйте наземную навигацию для сущности
-    }
-
 
 
     public static AttributeModifierMap setAttributes() {
@@ -54,7 +48,7 @@ public class NorscaT1Entity extends MonsterEntity implements IAnimatable {
 
     @Override
     public EntitySize getDimensions(Pose pose) {
-        return EntitySize.scalable(0.6F, 1.95F); // Параметры как у стандартного игрока
+        return EntitySize.scalable(0.6F, 1.95F);
     }
 
 
