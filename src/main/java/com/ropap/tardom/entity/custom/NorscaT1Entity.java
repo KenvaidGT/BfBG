@@ -1,15 +1,16 @@
 package com.ropap.tardom.entity.custom;
 
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.*;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.controller.LookController;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.merchant.villager.AbstractVillagerEntity;
 import net.minecraft.entity.monster.*;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.pathfinding.GroundPathNavigator;
+import net.minecraft.pathfinding.PathNavigator;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
@@ -29,18 +30,13 @@ public class NorscaT1Entity extends MonsterEntity implements IAnimatable {
 
     public NorscaT1Entity(EntityType<? extends MonsterEntity> type, World world) {
         super(type, world);
-        // Устанавливаем размеры хитбокса при создании сущности
-        this.setBoundingBox(new AxisAlignedBB(this.getX() - 0.4, this.getY(), this.getZ() - 0.4,
-                this.getX() + 0.4, this.getY() + 2.0, this.getZ() + 0.4));
     }
 
     @Override
-    public void tick() {
-        super.tick();
-        // Обновляем размеры хитбокса каждый тик
-        this.setBoundingBox(new AxisAlignedBB(this.getX() - 0.4, this.getY(), this.getZ() - 0.4,
-                this.getX() + 0.4, this.getY() + 2.0, this.getZ() + 0.4));
+    protected float getStandingEyeHeight(Pose pose, EntitySize size) {
+        return 1.74F;
     }
+
 
     public static AttributeModifierMap setAttributes() {
         return MonsterEntity.createMobAttributes()
@@ -51,33 +47,17 @@ public class NorscaT1Entity extends MonsterEntity implements IAnimatable {
     }
 
     @Override
-    protected void registerGoals() {
-        super.registerGoals();
-        this.goalSelector.addGoal(0, new SwimGoal(this));
-        this.goalSelector.addGoal(4, new AttackGoal(this));
-        this.targetSelector.addGoal(1, (new HurtByTargetGoal(this, AbstractRaiderEntity.class)).setAlertOthers());
-        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
-        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillagerEntity.class, true));
-        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolemEntity.class, true));
-        this.goalSelector.addGoal(8, new RandomWalkingGoal(this, 0.6));
-        this.goalSelector.addGoal(9, new LookAtGoal(this, PlayerEntity.class, 3.0F, 1.0F));
-        this.goalSelector.addGoal(10, new LookAtGoal(this, MobEntity.class, 8.0F));
+    public EntitySize getDimensions(Pose pose) {
+        return EntitySize.scalable(0.6F, 1.95F);
     }
 
-    class AttackGoal extends MeleeAttackGoal {
-        public AttackGoal(NorscaT1Entity entity) {
-            super(entity, 1.0, false);
-        }
 
-        @Override
-        protected double getAttackReachSqr(LivingEntity target) {
-            if (this.mob.getVehicle() instanceof RavagerEntity) {
-                float width = this.mob.getVehicle().getBbWidth() - 0.1F;
-                return width * 2.0F * width * 2.0F + target.getBbWidth();
-            } else {
-                return super.getAttackReachSqr(target);
-            }
-        }
+    @Override
+    protected void registerGoals() {
+        this.goalSelector.addGoal(0, new SwimGoal(this));
+        this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.0, false));
+        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
+        super.registerGoals();
     }
 
 
@@ -88,13 +68,13 @@ public class NorscaT1Entity extends MonsterEntity implements IAnimatable {
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-        if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.model.new", true)); // walk animation
+        //if (event.isMoving()) {
+            //event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.model.new", true)); // walk animation
             return PlayState.CONTINUE;
         }
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.model.new", true)); // idle animation
-        return PlayState.CONTINUE;
-    }
+        //event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.model.new", true)); // idle animation
+        //return PlayState.CONTINUE;
+    //}
 
     @Override
     public void registerControllers(AnimationData data) {
