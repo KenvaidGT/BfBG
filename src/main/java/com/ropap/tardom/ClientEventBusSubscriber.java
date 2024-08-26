@@ -34,7 +34,7 @@ public class ClientEventBusSubscriber {
 
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
-        event.put(ModEntityTypes.NORSCA_T1.get(), NorscaT1Entity.setAttributes());
+        event.put(ModEntityTypes.NORSCA_T1.get(), NorscaT1Entity.createAttributes());
     }
 
 }
