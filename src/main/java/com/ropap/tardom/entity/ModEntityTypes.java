@@ -18,7 +18,7 @@ public class ModEntityTypes {
             ENTITY_TYPE.register("norsca_t1",
                     ()-> EntityType.Builder.of(NorscaT1Entity::new,
                             EntityClassification.MONSTER)
-                            .sized(1f,1f)
+                            .sized(0.6f,1.95f)
                     .build(new ResourceLocation(TCI.MOD_ID, "norsca_t1").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPE.register(eventBus);
